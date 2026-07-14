@@ -13,6 +13,8 @@ Interactive prototype comparing two document ingestion pipelines:
 
 All stages are fully implemented and real for Mode A. Mode B uses the same stage implementations
 with a `d_` cache key prefix and separate Qdrant collection. Mode C runs both concurrently.
+The frontend now includes an interactive Q&A workflow and a simplified stage UI that hides visible
+confidence-score badges while still surfacing verification checks and stage outcomes.
 
 ## Layer completion status
 - [x] Layer 1 — Skeleton & Infrastructure

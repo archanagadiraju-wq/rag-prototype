@@ -1,0 +1,437 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R] /Count 4 >>
+endobj
+
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792]
+   /Contents 7 0 R /Resources << /Font << /F1 11 0 R /F2 12 0 R >> >> >>
+endobj
+
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792]
+   /Contents 8 0 R /Resources << /Font << /F1 11 0 R /F2 12 0 R >> >> >>
+endobj
+
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792]
+   /Contents 9 0 R /Resources << /Font << /F1 11 0 R /F2 12 0 R >> >> >>
+endobj
+
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792]
+   /Contents 10 0 R /Resources << /Font << /F1 11 0 R /F2 12 0 R >> >> >>
+endobj
+
+7 0 obj
+<< /Length 2187 >>
+stream
+BT
+/F1 11 Tf
+50 740 Td
+14 TL
+/F2 13 Tf
+(XR-2041 Phase III Randomised Controlled Trial) Tj
+T*
+/F1 11 Tf
+(A Multicentre, Double-Blind, Placebo-Controlled Study of XR-2041) Tj
+T*
+(in Patients with Moderate-to-Severe Rheumatoid Arthritis) Tj
+T*
+() Tj
+T*
+(Authors: Chen W, Patel R, Okonkwo A, Vasquez M, Nakamura T) Tj
+T*
+(Sponsor: Helix Therapeutics Inc.  |  Protocol: HX-2041-P3-001) Tj
+T*
+(Submission Date: 14 March 2026) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(Abstract) Tj
+T*
+/F1 11 Tf
+(Background: Rheumatoid arthritis \(RA\) affects approximately 1% of the global) Tj
+T*
+(population and is characterised by synovial inflammation and joint destruction.) Tj
+T*
+(Current biologics achieve remission in only 30-40% of patients, leaving a) Tj
+T*
+(significant unmet need for novel therapies.) Tj
+T*
+() Tj
+T*
+(Objective: To evaluate the efficacy and safety of XR-2041, a selective JAK1/JAK3) Tj
+T*
+(inhibitor, compared with placebo in adults with inadequate response to MTX.) Tj
+T*
+() Tj
+T*
+(Design: 52-week, Phase III, randomised \(2:1\), double-blind, placebo-controlled trial) Tj
+T*
+(conducted across 48 sites in 12 countries.) Tj
+T*
+() Tj
+T*
+(Participants: 1,248 adults \(18-75 yr\) with ACR/EULAR-defined moderate-to-severe RA,) Tj
+T*
+(DAS28-CRP >= 3.2, and documented inadequate response to methotrexate \(MTX\).) Tj
+T*
+() Tj
+T*
+(Interventions: XR-2041 15 mg once daily \(n=832\) or matched placebo \(n=416\),) Tj
+T*
+(both with stable background MTX 7.5-25 mg/week.) Tj
+T*
+() Tj
+T*
+(Primary Endpoint: ACR20 response rate at Week 12.) Tj
+T*
+(Key Secondary Endpoints: DAS28-CRP remission, ACR50/70 at Week 12 and 52,) Tj
+T*
+(HAQ-DI change from baseline, radiographic progression \(mTSS\) at Week 52.) Tj
+T*
+() Tj
+T*
+(Results: ACR20 at Week 12: XR-2041 70.4% vs placebo 29.1% \(p<0.001, OR 5.82\).) Tj
+T*
+(DAS28-CRP remission at Week 12: 38.2% vs 8.4% \(p<0.001\).) Tj
+T*
+(ACR50 at Week 12: 48.7% vs 14.1%. ACR70 at Week 12: 26.3% vs 5.3%.) Tj
+T*
+(No new safety signals; serious adverse events: 6.1% XR-2041 vs 5.8% placebo.) Tj
+T*
+() Tj
+T*
+(Conclusion: XR-2041 demonstrated superior efficacy vs placebo across all primary) Tj
+T*
+(and key secondary endpoints with an acceptable safety profile.) Tj
+T*
+ET
+endstream
+endobj
+
+8 0 obj
+<< /Length 2377 >>
+stream
+BT
+/F1 11 Tf
+50 740 Td
+14 TL
+/F2 13 Tf
+(1. Introduction) Tj
+T*
+/F1 11 Tf
+(Rheumatoid arthritis \(RA\) is a systemic autoimmune disease primarily affecting) Tj
+T*
+(synovial joints, with a worldwide prevalence of 0.5-1.0%. The pathogenesis) Tj
+T*
+(involves dysregulated cytokine signalling — particularly IL-6, TNF-alpha, and) Tj
+T*
+(IL-17 — mediated through Janus kinase \(JAK\) pathways.) Tj
+T*
+() Tj
+T*
+(Despite the availability of conventional DMARDs and biologic agents \(TNFi, IL-6Ri,) Tj
+T*
+(anti-CD20\), approximately 30-40% of patients fail to achieve sustained remission.) Tj
+T*
+(JAK inhibitors represent the latest class of targeted synthetic DMARDs \(tsDMARDs\),) Tj
+T*
+(with tofacitinib, baricitinib, and upadacitinib approved for RA.) Tj
+T*
+() Tj
+T*
+(XR-2041 is a next-generation oral JAK1/JAK3 inhibitor with high selectivity) Tj
+T*
+(\(JAK1 IC50 = 3.2 nM; JAK3 IC50 = 5.8 nM; >200-fold selectivity over JAK2\),) Tj
+T*
+(designed to minimise off-target haematological effects associated with JAK2) Tj
+T*
+(inhibition observed with earlier agents.) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(2. Methods) Tj
+T*
+/F1 11 Tf
+/F2 13 Tf
+(2.1 Study Design) Tj
+T*
+/F1 11 Tf
+(This was a global, multicentre, randomised, double-blind, placebo-controlled,) Tj
+T*
+(parallel-group Phase III study. Patients were randomised 2:1 to XR-2041 or) Tj
+T*
+(placebo using interactive response technology \(IRT\), stratified by:) Tj
+T*
+(  - Geographic region \(North America / Europe / Asia-Pacific / Other\)) Tj
+T*
+(  - Prior biologic use \(naive vs experienced\)) Tj
+T*
+(  - Baseline DAS28-CRP \(<5.1 vs >=5.1\)) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(2.2 Participants) Tj
+T*
+/F1 11 Tf
+(Inclusion: Age 18-75; ACR/EULAR 2010 RA classification criteria; DAS28-CRP >=3.2;) Tj
+T*
+(stable MTX \(>=12 weeks, 7.5-25 mg/week\); inadequate response defined as) Tj
+T*
+(>=3 months of therapy without remission.) Tj
+T*
+() Tj
+T*
+(Exclusion: Prior JAK inhibitor use; active or latent TB \(QuantiFERON positive\);) Tj
+T*
+(eGFR <30 mL/min/1.73m2; ALT/AST >2x ULN; current malignancy; pregnancy.) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(2.3 Interventions) Tj
+T*
+/F1 11 Tf
+(XR-2041 15 mg film-coated tablet, once daily, orally.) Tj
+T*
+(Placebo: matched tablet, once daily, orally.) Tj
+T*
+(Background: stable MTX throughout; folic acid 5 mg/week mandatory.) Tj
+T*
+(Rescue: IV methylprednisolone 125 mg single dose permitted once for flare.) Tj
+T*
+ET
+endstream
+endobj
+
+9 0 obj
+<< /Length 2036 >>
+stream
+BT
+/F1 11 Tf
+50 740 Td
+14 TL
+/F2 13 Tf
+(3. Results) Tj
+T*
+/F1 11 Tf
+/F2 13 Tf
+(3.1 Patient Disposition and Baseline) Tj
+T*
+/F1 11 Tf
+(Screened: 1,847  |  Randomised: 1,248  |  Completed 52 weeks: 1,089 \(87.3%\)) Tj
+T*
+(XR-2041: n=832 \(completed=731, 87.9%\)  |  Placebo: n=416 \(completed=358, 86.1%\)) Tj
+T*
+() Tj
+T*
+(Baseline characteristics were well balanced:) Tj
+T*
+(  Mean age: 51.3 yr \(XR\) vs 51.8 yr \(PBO\)) Tj
+T*
+(  Female: 78.1% vs 77.6%) Tj
+T*
+(  Mean DAS28-CRP: 5.81 vs 5.79) Tj
+T*
+(  Mean HAQ-DI: 1.48 vs 1.51) Tj
+T*
+(  Biologic-naive: 71.4% vs 70.9%) Tj
+T*
+(  Median RA duration: 7.2 yr vs 7.5 yr) Tj
+T*
+(  Mean CRP: 18.4 mg/L vs 19.1 mg/L) Tj
+T*
+(  Mean SJC28: 12.3 vs 12.6) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(3.2 Primary Endpoint) Tj
+T*
+/F1 11 Tf
+(ACR20 Response at Week 12:) Tj
+T*
+(  XR-2041: 586/832 \(70.4%\)  vs  Placebo: 121/416 \(29.1%\)) Tj
+T*
+(  Odds Ratio: 5.82 \(95% CI 4.31-7.86\)  |  p-value: <0.0001) Tj
+T*
+(  Risk Difference: 41.3% \(95% CI 35.9-46.7%\)) Tj
+T*
+(  NNT: 2.4 \(95% CI 2.1-2.8\)) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(3.3 Key Secondary Endpoints at Week 12) Tj
+T*
+/F1 11 Tf
+(  DAS28-CRP <2.6 \(remission\): 38.2% vs 8.4%   \(OR 6.65; p<0.0001\)) Tj
+T*
+(  DAS28-CRP <=3.2 \(LDA\):      56.7% vs 17.8%  \(OR 5.97; p<0.0001\)) Tj
+T*
+(  ACR50 response:              48.7% vs 14.1%  \(OR 5.67; p<0.0001\)) Tj
+T*
+(  ACR70 response:              26.3% vs  5.3%  \(OR 6.31; p<0.0001\)) Tj
+T*
+(  CDAI remission \(<=2.8\):      22.1% vs  4.1%  \(OR 6.60; p<0.0001\)) Tj
+T*
+(  HAQ-DI change from BL:      -0.61 vs -0.22  \(diff -0.39; p<0.0001\)) Tj
+T*
+(  Patient Global VAS change:  -31.4 vs -12.8  \(diff -18.6; p<0.0001\)) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(3.4 Radiographic Outcomes at Week 52) Tj
+T*
+/F1 11 Tf
+(  mTSS change: 0.42 \(XR\) vs 1.87 \(PBO\) [diff -1.45; 95%CI -2.01/-0.89; p<0.0001]) Tj
+T*
+(  Erosion score change: 0.18 vs 0.94 \(diff -0.76; p<0.0001\)) Tj
+T*
+(  JSN score change: 0.24 vs 0.93 \(diff -0.69; p<0.0001\)) Tj
+T*
+(  No radiographic progression \(deltaTSS<=0\): 68.4% vs 44.7% \(p<0.0001\)) Tj
+T*
+ET
+endstream
+endobj
+
+10 0 obj
+<< /Length 2639 >>
+stream
+BT
+/F1 11 Tf
+50 740 Td
+14 TL
+/F2 13 Tf
+(3.5 Safety Summary) Tj
+T*
+/F1 11 Tf
+(Treatment-emergent AEs \(TEAEs\): 74.3% XR-2041 vs 66.8% placebo) Tj
+T*
+(Serious TEAEs: 6.1% vs 5.8%  |  TEAE leading to discontinuation: 3.2% vs 2.4%) Tj
+T*
+() Tj
+T*
+(Most common TEAEs \(>=5% in either arm\):) Tj
+T*
+(  Upper respiratory tract infection: 14.8% vs 10.6%) Tj
+T*
+(  Nasopharyngitis:  9.2% vs  7.9%) Tj
+T*
+(  Headache:         8.1% vs  6.7%) Tj
+T*
+(  Nausea:           6.4% vs  3.8%) Tj
+T*
+(  Diarrhoea:        5.3% vs  4.1%) Tj
+T*
+(  Urinary tract infection: 5.1% vs  3.6%) Tj
+T*
+() Tj
+T*
+(Events of special interest:) Tj
+T*
+(  Serious infections: 2.4% vs 2.2%  \(incidence rate 2.8 vs 2.5/100 PY\)) Tj
+T*
+(  Herpes zoster: 1.8% vs 0.7%  \(IR 2.1 vs 0.8/100 PY\)) Tj
+T*
+(  MACE: 0.2% vs 0.0%  \(IR 0.24/100 PY; adjudicated by independent committee\)) Tj
+T*
+(  DVT/PE: 0.4% vs 0.2%  \(all patients had identifiable risk factors\)) Tj
+T*
+(  Malignancies: 0.6% vs 0.5%  \(consistent with RA background rates\)) Tj
+T*
+(  Laboratory: mean Hgb -0.3 g/dL; ANC stable; no Grade 4 cytopenias) Tj
+T*
+(  Creatinine: mean +0.04 mg/dL from baseline, stable throughout) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(4. Discussion) Tj
+T*
+/F1 11 Tf
+(XR-2041 15 mg once daily met its primary endpoint with an ACR20 response of 70.4%) Tj
+T*
+(at Week 12, versus 29.1% for placebo \(p<0.0001\). This effect size is consistent) Tj
+T*
+(with or exceeds approved JAK inhibitors in similar RA populations.) Tj
+T*
+() Tj
+T*
+(The selectivity profile of XR-2041 \(>200-fold JAK1/3 over JAK2\) was associated) Tj
+T*
+(with a stable haematological profile: no Grade 3/4 anaemia, neutropenia, or) Tj
+T*
+(thrombocytopenia events were observed. MACE and VTE rates were low and consistent) Tj
+T*
+(with the expected background rate for an RA population of this age and CV profile.) Tj
+T*
+() Tj
+T*
+(Limitations include the 12-week primary endpoint \(regulatory minimum\) and the) Tj
+T*
+(exclusion of patients with eGFR <30, limiting generalisability to severe CKD.) Tj
+T*
+() Tj
+T*
+/F2 13 Tf
+(5. Conclusion) Tj
+T*
+/F1 11 Tf
+(XR-2041 15 mg once daily demonstrated statistically significant and clinically) Tj
+T*
+(meaningful superiority over placebo on ACR20 at Week 12 and across all key) Tj
+T*
+(secondary endpoints including DAS28-CRP remission, ACR50/70, HAQ-DI improvement,) Tj
+T*
+(and radiographic non-progression at Week 52. The safety profile was acceptable) Tj
+T*
+(with no new signals beyond the class effect of JAK inhibitors.) Tj
+T*
+(These results support XR-2041 as a potential new treatment option for patients) Tj
+T*
+(with moderate-to-severe RA with inadequate response to methotrexate.) Tj
+T*
+ET
+endstream
+endobj
+
+11 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+
+12 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+
+xref
+0 13
+0000000000 65535 f 
+0000000009 00000 n 
+0000000059 00000 n 
+0000000135 00000 n 
+0000000277 00000 n 
+0000000419 00000 n 
+0000000561 00000 n 
+0000000704 00000 n 
+0000002944 00000 n 
+0000005374 00000 n 
+0000007463 00000 n 
+0000010156 00000 n 
+0000010228 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+10305
+%%EOF

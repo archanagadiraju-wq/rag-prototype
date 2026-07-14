@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>NexusIQ REST API v3.2 — Technical Reference</title></head>
+<body>
+<h1>NexusIQ REST API v3.2 — Technical Reference</h1>
+<p>This document provides a complete reference for the NexusIQ REST API v3.2, including authentication,
+rate limiting, endpoint descriptions, request/response schemas, error codes, and code examples.
+Base URL: <code>https://api.nexusiq.io/v3</code>. All endpoints require HTTPS.</p>
+
+<h2>Authentication</h2>
+<p>NexusIQ supports two authentication mechanisms: Bearer tokens (recommended for server-side integrations)
+and API keys (for lightweight scripts and webhooks). All API requests must include an Authorization header.</p>
+<pre><code>Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...</code></pre>
+<p>Tokens are issued via the OAuth 2.0 client credentials flow. Token lifetime is 3600 seconds.
+API keys are issued from the Settings &gt; API Keys console and never expire unless revoked.</p>
+
+<h2>Rate Limiting</h2>
+<p>Rate limits are enforced per API key at the account level. The default tier allows 1,000 requests
+per minute. Enterprise accounts may request elevated limits. Rate limit headers are included in every response.</p>
+<table border="1" cellpadding="4">
+  <tr><th>Header</th><th>Description</th><th>Example</th></tr>
+  <tr><td>X-RateLimit-Limit</td><td>Max requests per window</td><td>1000</td></tr>
+  <tr><td>X-RateLimit-Remaining</td><td>Remaining requests in current window</td><td>842</td></tr>
+  <tr><td>X-RateLimit-Reset</td><td>Unix timestamp when limit resets</td><td>1748361600</td></tr>
+  <tr><td>Retry-After</td><td>Seconds until retry (on 429 only)</td><td>17</td></tr>
+</table>
+
+<h2>Endpoints</h2>
+
+<h3>Documents</h3>
+
+<h4>POST /documents</h4>
+<p>Ingest a new document into the pipeline. Accepts multipart/form-data with the file and metadata.
+Returns a job_id for tracking pipeline progress via WebSocket or polling.</p>
+<pre><code>curl -X POST https://api.nexusiq.io/v3/documents   -H "Authorization: Bearer TOKEN"   -F "file=@report.pdf"   -F "pipeline=custom"   -F "metadata={"source":"upload","tags":["medical","trial"]}"</code></pre>
+<p>Response (202 Accepted):</p>
+<pre><code>{
+  "job_id": "j_01HXYZ1234",
+  "status": "queued",
+  "pipeline": "custom",
+  "created_at": "2026-05-17T10:00:00Z",
+  "estimated_duration_s": 45
+}</code></pre>
+
+<h4>GET /documents/{doc_id}</h4>
+<p>Retrieve metadata and extraction results for a previously ingested document.</p>
+<pre><code>curl -X GET https://api.nexusiq.io/v3/documents/doc_abc123   -H "Authorization: Bearer TOKEN"</code></pre>
+
+<h4>GET /documents</h4>
+<p>List all documents with optional filters. Supports pagination via cursor-based navigation.</p>
+<table border="1" cellpadding="4">
+  <tr><th>Parameter</th><th>Type</th><th>Required</th><th>Description</th></tr>
+  <tr><td>limit</td><td>integer</td><td>No</td><td>Results per page (default 20, max 100)</td></tr>
+  <tr><td>cursor</td><td>string</td><td>No</td><td>Pagination cursor from previous response</td></tr>
+  <tr><td>pipeline</td><td>string</td><td>No</td><td>Filter by pipeline: custom | docling</td></tr>
+  <tr><td>status</td><td>string</td><td>No</td><td>Filter by status: queued | running | completed | error</td></tr>
+  <tr><td>from</td><td>ISO8601</td><td>No</td><td>Filter by created_at &gt;= from</td></tr>
+  <tr><td>to</td><td>ISO8601</td><td>No</td><td>Filter by created_at &lt;= to</td></tr>
+</table>
+
+<h4>DELETE /documents/{doc_id}</h4>
+<p>Delete a document and all associated chunks, vectors, and metadata from the store.
+This operation is irreversible. Returns 204 No Content on success.</p>
+
+<h3>Search / Retrieval</h3>
+
+<h4>POST /search</h4>
+<p>Perform hybrid (dense + sparse) retrieval over the indexed document corpus.
+Supports dense vector search (ANN), BM25 sparse retrieval, and RRF fusion re-ranking.</p>
+<pre><code>curl -X POST https://api.nexusiq.io/v3/search   -H "Authorization: Bearer TOKEN"   -H "Content-Type: application/json"   -d '{
+    "query": "What was the primary endpoint result for XR-2041?",
+    "top_k": 10,
+    "pipeline": "custom",
+    "filters": {"doc_type": "research_paper", "domain": "medical"},
+    "rerank": true,
+    "include_metadata": true
+  }'</code></pre>
+
+<h3>Jobs</h3>
+
+<h4>GET /jobs/{job_id}</h4>
+<p>Poll job status. For real-time updates, use the WebSocket endpoint instead.</p>
+
+<h4>WebSocket ws://api.nexusiq.io/v3/ws/{job_id}</h4>
+<p>Connect to receive real-time stage events as the pipeline processes a document.
+Each message is a JSON object conforming to the StageEvent schema.</p>
+
+<h2>Error Codes</h2>
+<table border="1" cellpadding="4">
+  <tr><th>HTTP Status</th><th>Code</th><th>Description</th></tr>
+  <tr><td>400</td><td>INVALID_REQUEST</td><td>Malformed request body or missing required field</td></tr>
+  <tr><td>401</td><td>UNAUTHORIZED</td><td>Missing or invalid authentication credential</td></tr>
+  <tr><td>403</td><td>FORBIDDEN</td><td>Authenticated but insufficient permissions for resource</td></tr>
+  <tr><td>404</td><td>NOT_FOUND</td><td>Requested resource does not exist</td></tr>
+  <tr><td>409</td><td>CONFLICT</td><td>Resource already exists or concurrent modification</td></tr>
+  <tr><td>413</td><td>PAYLOAD_TOO_LARGE</td><td>File exceeds 50 MB limit</td></tr>
+  <tr><td>415</td><td>UNSUPPORTED_MEDIA_TYPE</td><td>File type not supported by requested pipeline</td></tr>
+  <tr><td>422</td><td>UNPROCESSABLE_ENTITY</td><td>Semantically invalid request (e.g. bad date range)</td></tr>
+  <tr><td>429</td><td>RATE_LIMITED</td><td>Too many requests — see Retry-After header</td></tr>
+  <tr><td>500</td><td>INTERNAL_ERROR</td><td>Unexpected server error — contact support</td></tr>
+  <tr><td>503</td><td>SERVICE_UNAVAILABLE</td><td>Planned maintenance or temporary overload</td></tr>
+</table>
+
+<h2>SDK Examples</h2>
+<h3>Python</h3>
+<pre><code>from nexusiq import NexusIQ
+client = NexusIQ(api_key="nxiq_live_xxxxx")
+job = client.documents.ingest("report.pdf", pipeline="custom")
+result = job.wait()  # blocks until pipeline completes
+chunks = result.chunks
+print(f"Extracted {len(chunks)} chunks from {result.page_count} pages")</code></pre>
+
+<h3>Node.js</h3>
+<pre><code>import { NexusIQ } from '@nexusiq/sdk';
+const client = new NexusIQ({ apiKey: process.env.NEXUSIQ_KEY });
+const job = await client.documents.ingest(fs.createReadStream('report.pdf'));
+const result = await job.wait();
+console.log(`${result.chunks.length} chunks, ${result.wordCount} words`);</code></pre>
+</body>
+</html>
